@@ -92,9 +92,9 @@ Pybind11 2.5+ should be added directly to the project directory as follows:
 
 * **Confidence**:  (0, 1.0]. Default = 0.95.  Likelihood that a correct solution will be found.  This determines the number of iterations run based on a dynamically updating estimate of the inlier rate.  The higher the confidence, the longer runtime.  Note: to better match other Matlab geometry solvers, this is given as (0, 100] in the Matlab wrapper
 * **Reprojection Error Threshold**:  > 0, Default = 2.0.  The maximum reprojection error (in pixels) for a correspondence to be considered an inlier.  This parameter is denoted `MaxDistance` in the Matlab wrapper.
-* **Filtered Inlier Rate**:  (0, 1.0]. Default = 0.7.  The estimated inlier rate of the correspondnce set after being filtered by the initial homography estimate.  This determines the number of inner RANSAC iterations.  Lower estimates will increase the likelihood of a correct result, but increase the run time.
+* **Filtered Inlier Rate**:  (0, 1.0]. Default = 0.7.  The estimated inlier rate of the correspondence set after being filtered by the initial homography estimate.  This determines the number of inner RANSAC iterations.  Lower estimates will increase the likelihood of a correct result, but increase the run time.
 * **Max Iterations**:  > 0.  Default=1000.  The maximum number of iterations allowed to run regardless of other parameter settings.
-* **Run Inner RANSAC Thresh**:  > 0. Default = 25.  The highest median reprojection error of the filtered inlier set in order for the inner ransac estimatino to run.  Higher thresholds will increase the likelihood of a correct result, but increase the run time.  The default of 25 works well generally, but this can be tuned for specific datasets.
+* **Run Inner RANSAC Thresh**:  > 0. Default = 25.  The highest median reprojection error of the filtered inlier set in order for the inner ransac estimation to run.  Higher thresholds will increase the likelihood of a correct result, but increase the run time.  The default of 25 works well generally, but this can be tuned for specific datasets.
 * **Search Top N Filtered**:  (>= 4 homography, >=3 for affine, >=2 for similarity).  Default = 20.  The number of the top N filtered matches to be searched during the inner RANSAC step. 
 
 ### Input Data
