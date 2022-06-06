@@ -84,7 +84,7 @@ Pybind11 2.5+ should be added directly to the project directory as follows:
 | Projective | Out of plane projection  | findHomography | 4 |
 | Translation | Move  | findTranslation | 1 |
 
-`HSolo` does not directly solve for Fundamental or Essential Matricies.  The `HSolo` Projective solver can be used as a pre-filter in inlier-sparse cases.  The inliers producded by `HSolo` can then be fed into existing solvers such as OpenCV `findFundamentalMatrix`. 
+`HSolo` does not directly solve for Fundamental or Essential Matricies.  The `HSolo` Projective solver can be used as a pre-filter in inlier-sparse cases.  The inliers produced by `HSolo` can then be fed into existing solvers such as OpenCV `findFundamentalMatrix`. 
 
 ## API
 
