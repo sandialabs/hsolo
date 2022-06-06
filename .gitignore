@@ -1,0 +1,21 @@
+
+# ignore build files
+**/build
+
+**/ALL_BUILD.vcxproj.filters
+**/ALL_BUILD.vcproj
+
+**/CMakeFiles
+
+**/__pycache__
+
+.ipynb_checkpoints
+
+**/_pyhsolo*.pyd
+**/_pyhsolo*.so
+
+/pyhsolo.egg-info
+
+.vscode/
+
+lib/*

@@ -1,0 +1,14 @@
+name: hsolo-dev
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - nb_conda_kernels
+  - opencv
+  - numpy
+  - matplotlib
+  - pybind11
+  - pip
+  - pip:
+    - "-e ."
+  
